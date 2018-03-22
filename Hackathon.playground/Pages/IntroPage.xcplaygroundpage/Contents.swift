@@ -31,10 +31,6 @@ geekEmojiTwo.text = Constants.preferredEmoji
 geekEmojiTwo.font = UIFont(name: "Avenir-Heavy", size: Constants.preferredEmojiSize)
 liveViewCanvas.addSubview(geekEmojiTwo)
 
-let zero: UIImageView = UIImageView(image: UIImage(named: "Zero"))
-let one: UIImageView = UIImageView(image: UIImage(named: "One"))
-let binaries: [UIImageView] = [zero, one]
-
 func tellStory() -> Void {
     let storyTeller: AVSpeechSynthesizer = AVSpeechSynthesizer()
     let storyText: AVSpeechUtterance = AVSpeechUtterance(string: "Once upon a time there was a lot of students who were doing their best to get scholarships to Dub-Dub in San Jose")

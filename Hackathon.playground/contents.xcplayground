@@ -3,5 +3,6 @@
     <pages>
         <page name='IntroPage'/>
         <page name='LastPage'/>
+        <page name='AnnouncementsPage'/>
     </pages>
 </playground>

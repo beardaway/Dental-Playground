@@ -37,8 +37,8 @@ func animateFinishLabel() -> Void {
 
 func rotateScreamingFaces() -> Void {
     UIView.animate(withDuration: 1.2, delay: 0.0, options: .curveLinear, animations: {
-        screamLabelOne.transform = screamLabelOne.transform.rotated(by: CGFloat(M_PI))
-        screamLabelTwo.transform = screamLabelTwo.transform.rotated(by: CGFloat(M_PI))
+        screamLabelOne.transform = screamLabelOne.transform.rotated(by: CGFloat(Double.pi))
+        screamLabelTwo.transform = screamLabelTwo.transform.rotated(by: CGFloat(Double.pi))
     }) { (finished) in
         rotateScreamingFaces()
     }
