@@ -5,13 +5,15 @@ import AVFoundation
 // Constants
 
 struct Constants {
+    static let canvasWidth: Int = 1024
+    static let canvasHeight: Int = 892
     static let preferredTextSize: CGFloat = 63.0
     static let preferredFont: String = "Avenir-Heavy"
     static let headsHeight: Int = 120
     static let headsWidth: Int = 120
 }
 
-let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 1024, height: 892))
+let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: Constants.canvasWidth, height: Constants.canvasHeight))
 liveViewCanvas.backgroundColor = UIColor.orange
 
 let finishLabel: UILabel = UILabel(frame: CGRect(x: 120, y: -370, width: 700, height: 70))

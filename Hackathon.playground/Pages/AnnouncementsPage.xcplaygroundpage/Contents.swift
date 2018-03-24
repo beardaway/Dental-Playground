@@ -1,4 +1,4 @@
-//: [Previous](@previous)
+//: [Previous page 🤓](@previous)
 
 import UIKit
 import PlaygroundSupport
@@ -7,11 +7,13 @@ import AVFoundation
 // Constants
 
 struct Constants {
+    static let canvasWidth: Int = 1024
+    static let canvasHeight: Int = 892
     static let prefferedFont: String = "Avenir-Heavy"
     static let resultsAnnouncementDate: String = "04/20/2018 08:00:00 a"
-    static let guysHeight: Int = 330
-    static let guysWidth: Int = 250
-    static let guysVerticalCoordinate: Int = 330
+    static let hackersHeight: Int = 330
+    static let hackersWidth: Int = 250
+    static let hackersVerticalCoordinate: Int = 330
     static let sweat: String = "Sweat"
     static let sweatWidth: Int = 15
     static let sweatHeight: Int = 25
@@ -28,7 +30,7 @@ let requestedComponents: Set<Calendar.Component> = [
 let dateFormatter: DateFormatter = DateFormatter()
 let userCalendar = Calendar.current
 
-let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 1024, height: 892))
+let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: Constants.canvasWidth, height: Constants.canvasHeight))
 liveViewCanvas.backgroundColor = UIColor(red: 0.73, green: 0.44, blue: 0.44, alpha:1.0)
 
 let sceneLabel: UILabel = UILabel(frame: CGRect(x: 60, y: 70, width: 800, height: 50))
@@ -47,7 +49,7 @@ timerLabel.font = UIFont(name: Constants.prefferedFont, size: 35)
 liveViewCanvas.addSubview(timerLabel)
 
 let konradImageView: UIImageView = UIImageView(image: UIImage(named: "Konrad"))
-konradImageView.frame = CGRect(x: 15, y: Constants.guysVerticalCoordinate, width: Constants.guysWidth, height: Constants.guysHeight)
+konradImageView.frame = CGRect(x: 15, y: Constants.hackersVerticalCoordinate, width: Constants.hackersWidth, height: Constants.hackersHeight)
 liveViewCanvas.addSubview(konradImageView)
 
 let konradSweatImageView: UIImageView = UIImageView(image: UIImage(named: Constants.sweat))
@@ -55,7 +57,7 @@ konradSweatImageView.frame = CGRect(x: 130, y: 375, width: Constants.sweatWidth,
 liveViewCanvas.addSubview(konradSweatImageView)
 
 let blakeImageView: UIImageView = UIImageView(image: UIImage(named: "Blake"))
-blakeImageView.frame = CGRect(x: 260, y: Constants.guysVerticalCoordinate, width: Constants.guysWidth, height: Constants.guysHeight)
+blakeImageView.frame = CGRect(x: 260, y: Constants.hackersVerticalCoordinate, width: Constants.hackersWidth, height: Constants.hackersHeight)
 liveViewCanvas.addSubview(blakeImageView)
 
 let blakeSweatImageViewOne: UIImageView = UIImageView(image: UIImage(named: Constants.sweat
@@ -68,7 +70,7 @@ blakeSweatImageViewTwo.frame = CGRect(x: 385, y: 340, width: Constants.sweatWidt
 liveViewCanvas.addSubview(blakeSweatImageViewTwo)
 
 let yaoImageView: UIImageView = UIImageView(image: UIImage(named: "Yao"))
-yaoImageView.frame = CGRect(x: 502, y: Constants.guysVerticalCoordinate, width: Constants.guysWidth, height: Constants.guysHeight)
+yaoImageView.frame = CGRect(x: 502, y: Constants.hackersVerticalCoordinate, width: Constants.hackersWidth, height: Constants.hackersHeight)
 liveViewCanvas.addSubview(yaoImageView)
 
 let yaoSweatImageView: UIImageView = UIImageView(image: UIImage(named: Constants.sweat))
@@ -138,4 +140,4 @@ showGuysAnxiety()
 
 PlaygroundPage.current.liveView = liveViewCanvas
 
-//: [Next](@next)
+//: [Next page 🤓](@next)

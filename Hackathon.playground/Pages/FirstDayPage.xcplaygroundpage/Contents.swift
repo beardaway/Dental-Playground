@@ -4,10 +4,28 @@ import UIKit
 import PlaygroundSupport
 import AVFoundation
 
-let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 1024, height: 892))
+struct Constants {
+    static let canvasHeight: Int = 892
+    static let canvasWidth: Int = 1024
+    static let roadSignHeight: Int = 150
+    static let roadSignWidth: Int = 130
+    static let smallTreeWidth: Int = 100
+    static let smallTreeHeight: Int = 140
+    static let bigTreeWidth: Int = 130
+    static let bigTreeHeight: Int = 200
+    static let miniHackerHeight: Int = 180
+    static let miniHackerWidth: Int = 100
+    static let chatCloudWidth: Int = 110
+    static let chatCloudHeight: Int = 80
+    static let preferredFont: String = "Avenir-Heavy"
+    static let greenFieldWidth: Int = 185
+    static let greenFieldHeight: Int = 774
+}
+
+let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: Constants.canvasWidth, height: Constants.canvasHeight))
 liveViewCanvas.backgroundColor = UIColor.white
 
-let skyView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 892, height: 250))
+let skyView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: Constants.canvasWidth, height: 250))
 skyView.backgroundColor = UIColor(red:0.60, green:0.81, blue:0.98, alpha:1.0)
 liveViewCanvas.addSubview(skyView)
 
@@ -16,80 +34,80 @@ hackathonVenueImageView.frame = CGRect(x: 185, y: 0, width: 400, height: 250)
 liveViewCanvas.addSubview(hackathonVenueImageView)
 
 let leftGreenFieldImageView: UIImageView = UIImageView(image: UIImage(named: "LeftGreenField"))
-leftGreenFieldImageView.frame = CGRect(x: 0, y: 249, width: 185, height: 774)
+leftGreenFieldImageView.frame = CGRect(x: 0, y: 249, width: Constants.greenFieldWidth, height: Constants.greenFieldHeight)
 liveViewCanvas.addSubview(leftGreenFieldImageView)
 
 let rightGreenFieldImageView: UIImageView = UIImageView(image: UIImage(named: "RightGreenField"))
-rightGreenFieldImageView.frame = CGRect(x: 585, y: 249, width: 185, height: 774)
+rightGreenFieldImageView.frame = CGRect(x: 585, y: 249, width: Constants.greenFieldWidth, height: Constants.greenFieldHeight)
 liveViewCanvas.addSubview(rightGreenFieldImageView)
 
 let pathWayImageView: UIImageView = UIImageView(image: UIImage(named: "PathWay"))
-pathWayImageView.frame = CGRect(x: 46, y: 249, width: 670, height: 774)
+pathWayImageView.frame = CGRect(x: 46, y: 249, width: 670, height: Constants.greenFieldHeight)
 liveViewCanvas.addSubview(pathWayImageView)
 
 let playgroundSignImageViewOne: UIImageView = UIImageView(image: UIImage(named: "RoadSign"))
-playgroundSignImageViewOne.frame = CGRect(x: 10, y: 240, width: 130, height: 150)
+playgroundSignImageViewOne.frame = CGRect(x: 10, y: 240, width: Constants.roadSignWidth, height: Constants.roadSignHeight)
 liveViewCanvas.addSubview(playgroundSignImageViewOne)
 
 let playgroundSignImageViewTwo: UIImageView = UIImageView(image: UIImage(named: "RoadSign"))
-playgroundSignImageViewTwo.frame = CGRect(x: 630, y: 240, width: 130, height: 150)
+playgroundSignImageViewTwo.frame = CGRect(x: 630, y: 240, width: Constants.roadSignWidth, height: Constants.roadSignHeight)
 liveViewCanvas.addSubview(playgroundSignImageViewTwo)
 
 let treeOne: UIImageView = UIImageView(image: UIImage(named: "SmallTree"))
-treeOne.frame = CGRect(x: 90, y: 320, width: 100, height: 140)
+treeOne.frame = CGRect(x: 90, y: 320, width: Constants.smallTreeWidth, height: Constants.smallTreeHeight)
 liveViewCanvas.addSubview(treeOne)
 
 let treeTwo: UIImageView = UIImageView(image: UIImage(named: "SmallTree"))
-treeTwo.frame = CGRect(x: 592, y: 320, width: 100, height: 140)
+treeTwo.frame = CGRect(x: 592, y: 320, width: Constants.smallTreeWidth, height: Constants.smallTreeHeight)
 liveViewCanvas.addSubview(treeTwo)
 
 let treeThree: UIImageView = UIImageView(image: UIImage(named: "MediumTree"))
-treeThree.frame = CGRect(x: 625, y: 600, width: 130, height: 200)
+treeThree.frame = CGRect(x: 625, y: 600, width: Constants.bigTreeWidth, height: Constants.bigTreeHeight)
 liveViewCanvas.addSubview(treeThree)
 
 let treeFour: UIImageView = UIImageView(image: UIImage(named: "MediumTree"))
-treeFour.frame = CGRect(x: 12, y: 600, width: 130, height: 200)
+treeFour.frame = CGRect(x: 12, y: 600, width: Constants.bigTreeWidth, height: Constants.bigTreeHeight)
 liveViewCanvas.addSubview(treeFour)
 
 let konradMini: UIImageView = UIImageView(image: UIImage(named: "KonradMini"))
-konradMini.frame = CGRect(x: 200, y: 700, width: 100, height: 180)
+konradMini.frame = CGRect(x: 200, y: 700, width: Constants.miniHackerWidth, height: Constants.miniHackerHeight)
 liveViewCanvas.addSubview(konradMini)
 
 let blakeMini: UIImageView = UIImageView(image: UIImage(named: "BlakeMini"))
-blakeMini.frame = CGRect(x: 350, y: 670, width: 100, height: 180)
+blakeMini.frame = CGRect(x: 350, y: 670, width: Constants.miniHackerWidth, height: Constants.miniHackerHeight)
 liveViewCanvas.addSubview(blakeMini)
 
 let yaoMini: UIImageView = UIImageView(image: UIImage(named: "YaoMini"))
-yaoMini.frame = CGRect(x: 480, y: 700, width: 100, height: 180)
+yaoMini.frame = CGRect(x: 480, y: 700, width: Constants.miniHackerWidth, height: Constants.miniHackerHeight)
 liveViewCanvas.addSubview(yaoMini)
 
 let konradChat: UIImageView = UIImageView(image: UIImage(named: "RedChatCloud"))
-konradChat.frame = CGRect(x: 200, y: 265, width: 110, height: 80)
+konradChat.frame = CGRect(x: 200, y: 265, width: Constants.chatCloudWidth, height: Constants.chatCloudHeight)
 liveViewCanvas.addSubview(konradChat)
 
 let konradChatText: UILabel = UILabel(frame: CGRect(x: 210, y: 262, width: 90, height: 60))
 konradChatText.textColor = UIColor.white
-konradChatText.font = UIFont(name: "Avenir-Heavy", size: 17)
+konradChatText.font = UIFont(name: Constants.preferredFont, size: 17)
 konradChatText.text = "Let's do it!"
 liveViewCanvas.addSubview(konradChatText)
 
 let blakeChat: UIImageView = UIImageView(image: UIImage(named: "OrangeChatCloud"))
-blakeChat.frame = CGRect(x: 320, y: 280, width: 110, height: 80)
+blakeChat.frame = CGRect(x: 320, y: 280, width: Constants.chatCloudWidth, height: Constants.chatCloudHeight)
 liveViewCanvas.addSubview(blakeChat)
 
 let blakeChatText: UILabel = UILabel(frame: CGRect(x: 342, y: 277, width: 70, height: 60))
 blakeChatText.textColor = UIColor.white
-blakeChatText.font = UIFont(name: "Avenir-Heavy", size: 20)
+blakeChatText.font = UIFont(name: Constants.preferredFont, size: 20)
 blakeChatText.text = "Finally!"
 liveViewCanvas.addSubview(blakeChatText)
 
 let yaoChat: UIImageView = UIImageView(image: UIImage(named: "RedChatCloud"))
-yaoChat.frame = CGRect(x: 440, y: 265, width: 110, height: 80)
+yaoChat.frame = CGRect(x: 440, y: 265, width: Constants.chatCloudWidth, height: Constants.chatCloudHeight)
 liveViewCanvas.addSubview(yaoChat)
 
 let yaoChatText: UILabel = UILabel(frame: CGRect(x: 450, y: 255, width: 110, height: 80))
 yaoChatText.textColor = UIColor.white
-yaoChatText.font = UIFont(name: "Avenir-Heavy", size: 17)
+yaoChatText.font = UIFont(name: Constants.preferredFont, size: 17)
 yaoChatText.text = "Can't wait!"
 liveViewCanvas.addSubview(yaoChatText)
 

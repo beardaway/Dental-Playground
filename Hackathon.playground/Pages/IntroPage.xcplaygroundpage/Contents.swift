@@ -7,8 +7,8 @@ import AVFoundation
 
 struct Constants {
     static let preferredTextSize: CGFloat = 63.0
-    static let preferredEmojiSize: CGFloat = 100.0
-    static let preferredEmoji: String = "🤓"
+    static let headsHeight: Int = 120
+    static let headsWidth: Int = 120
 }
 
 let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 1024, height: 892))
@@ -21,15 +21,19 @@ introLabel.font = UIFont(name: "Avenir-Heavy", size: Constants.preferredTextSize
 introLabel.alpha = 0
 liveViewCanvas.addSubview(introLabel)
 
-let geekEmojiOne: UILabel = UILabel(frame: CGRect(x: 100, y: 130, width: 100, height: 100))
-geekEmojiOne.text = Constants.preferredEmoji
-geekEmojiOne.font = UIFont(name: "Avenir-Heavy", size: Constants.preferredEmojiSize)
-liveViewCanvas.addSubview(geekEmojiOne)
+// TODO: Change photos of the heads when they will be done
 
-let geekEmojiTwo: UILabel = UILabel(frame: CGRect(x: 610, y: 610, width: 100, height: 100))
-geekEmojiTwo.text = Constants.preferredEmoji
-geekEmojiTwo.font = UIFont(name: "Avenir-Heavy", size: Constants.preferredEmojiSize)
-liveViewCanvas.addSubview(geekEmojiTwo)
+let konradHead: UIImageView = UIImageView(image: UIImage(named: "KonradHead"))
+konradHead.frame = CGRect(x: 50, y: 190, width: Constants.headsWidth, height: Constants.headsHeight)
+liveViewCanvas.addSubview(konradHead)
+
+let yaoHead: UIImageView = UIImageView(image: UIImage(named: "YaoHead"))
+yaoHead.frame = CGRect(x: 580, y: 190, width: Constants.headsWidth, height: Constants.headsHeight)
+liveViewCanvas.addSubview(yaoHead)
+
+let blakeHead: UIImageView = UIImageView(image: UIImage(named: "BlakeHead"))
+blakeHead.frame = CGRect(x: 320, y: 500, width: Constants.headsWidth, height: Constants.headsHeight)
+liveViewCanvas.addSubview(blakeHead)
 
 func tellStory() -> Void {
     let storyTeller: AVSpeechSynthesizer = AVSpeechSynthesizer()
@@ -56,17 +60,16 @@ func animateIntroLabel() -> Void {
     }
 }
 
-func animateGeekEmojis() -> Void {
-    UIView.animate(withDuration: 6.5) {
-        geekEmojiOne.transform = CGAffineTransform(translationX: 510, y: 0)
-        geekEmojiTwo.transform = CGAffineTransform(translationX: -510, y: 0)
+func animateHackerHeads() -> Void {
+    UIView.animate(withDuration: 7.0) {
+        konradHead.transform = CGAffineTransform(translationX: 180, y: 0)
+        yaoHead.transform = CGAffineTransform(translationX: -180, y: 0)
     }
 }
 
 animateIntroLabel()
-animateGeekEmojis()
+animateHackerHeads()
 tellStory()
-
 
 PlaygroundPage.current.liveView = liveViewCanvas
 
