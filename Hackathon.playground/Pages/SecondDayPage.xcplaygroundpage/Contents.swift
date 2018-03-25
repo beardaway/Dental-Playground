@@ -5,10 +5,9 @@ import PlaygroundSupport
 
 //: [Previous page 🤓](@previous)
 /*:
+ # Hackathon itself - PART II
  
- # Haackathon itself - PART II
- 
- ### What is obvious?
+ ## What is obvious?
  
 For someone who attended numerous hackathon in their life, it is clear that the only two things that are certain both at hackathons and in software development, are bugs and time when you have to fix them 👩‍🔧👨‍🔧
  

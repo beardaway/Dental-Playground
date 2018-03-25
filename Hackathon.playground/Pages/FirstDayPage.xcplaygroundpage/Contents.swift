@@ -4,12 +4,11 @@ import AVFoundation
 
 //: [Previous page 🤓](@previous)
 /*:
- 
- # Haackathon - what is it? 👩‍💻👨‍💻
+ # Hackathon - what is it? 👩‍💻👨‍💻
  
  ![Me AGHacks](AGHacks.jpg)
  
- ### The definition
+ ## The definition
  
 **Hackathon** is an event which gathers computer programmers, designer, project managers and those who are into business, who collaborate on software projects for limited amount of time
  

@@ -4,8 +4,7 @@ import Foundation
 import AVFoundation
 
 /*:
- 
- # Haackathon Playground
+ # Hackathon Playground
  
  ![Me AGHacks](AGHacksTwo.jpg)
  

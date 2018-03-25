@@ -1,8 +1,31 @@
-//: [Previous page 🤓](@previous)
-
 import UIKit
 import PlaygroundSupport
 import AVFoundation
+
+//: [Previous page 🤓](@previous)
+/*:
+ 
+ # Hackathon itself - PART III
+ 
+ ## The last day
+ 
+ So you came here on the first day, got an idea, gathered your team and started coding. On the second day you continued programming, carried out some design sessions, had numerous brainstorms. Maybe you even attended some workshops 👨‍🏫👩‍🏫 This is the last day when you have to put in extra effort cause in a short amount of time you will be pitching your solution in front of all the hackers and jury. Scared? 😱
+ 
+ ## What to do?
+ 
+ Firstly, don't worry 🙂 I will provide you with some steps you may follow:
+ 
+ * Everyone on your team may be tired so do prevent conflicts
+ * Do not waste time for converstaions that will not bring any added value to your project
+ * Stay focused on the code, design and user experience!
+ * Prepare a solid deck along with the demo. Do not skip it till the end!
+ * Calm down and rock the stage 🤟🏼
+ 
+ ## Winners announcement
+
+ You know this feeling after whatever exam or job interview. In case of waiting for hackathon results it looks the same. You know that you put your heart in coding and designing the software you planned at the beginning. All hackers did 💪 You did your best, now is the time to calm down and wait for final announcements 😬
+ */
+//: [Next page 🤓](@next)
 
 // Constants
 
@@ -139,5 +162,3 @@ keepSweatInvisible()
 showGuysAnxiety()
 
 PlaygroundPage.current.liveView = liveViewCanvas
-
-//: [Next page 🤓](@next)
