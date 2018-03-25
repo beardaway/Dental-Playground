@@ -3,7 +3,8 @@
     <pages>
         <page name='IntroPage'/>
         <page name='FirstDayPage'/>
-        <page name='AnnouncementsPage'/>
+        <page name='SecondDayPage'/>
+        <page name='FinalDayPage'/>
         <page name='LastPage'/>
     </pages>
 </playground>
