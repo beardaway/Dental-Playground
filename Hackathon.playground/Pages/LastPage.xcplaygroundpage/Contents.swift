@@ -3,8 +3,15 @@ import PlaygroundSupport
 import AVFoundation
 
 //: [Previous page 🤓](@previous)
-
-
+/*:
+ # Good luck! 🙂🤓👨‍💻👩‍💻🍏
+ 
+ ## Last thoughts
+ 
+ Guys, you've gone a long way reading this book and developing your playgrounds for WWDC 2018 Scholarship. Congrats to anyone who is sailing this boat right now 👏 I hope that I managed to somehow get you closer to the idea of attending hackathons and that you cannot wait to find one in your neighbourhood 🙂
+ 
+ Wish you guys lots of luck in your future adventures and happy coding in our iOS software engineering playground! 🎮💻⌨️🤓
+ */
 
 // Constants
 
