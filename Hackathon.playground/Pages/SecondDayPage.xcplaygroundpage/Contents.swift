@@ -1,9 +1,26 @@
-//: [Previous page 🤓](@previous)
-
 import Foundation
 import UIKit
 import AVFoundation
 import PlaygroundSupport
+
+//: [Previous page 🤓](@previous)
+/*:
+ 
+ # Haackathon itself - PART II
+ 
+ ### What is obvious?
+ 
+For someone who attended numerous hackathon in their life, it is clear that the only two things that are certain both at hackathons and in software development, are bugs and time when you have to fix them 👩‍🔧👨‍🔧
+ 
+ ## What is important?
+ 
+ The important thing is that whenever you will face any bugs, you can ask for help. To be honest anyone! All hackathons gather people of different skillsets and experiences. So pick your communication channel and ask for help 🎤 There will be for sure a bunch of guys who will be more than willing to help you with the stuff that cause your nightmares 🛠🙀
+ 
+ ## What is so fantastic about hackathons?
+ 
+The best thing about hackathons and IT in general is that software development connect people across languages, timezones, places all over the world and cultures. We really do not pay attention to any of those things, cause we treat everyone with great respect. To build a trustworthy developer communities you have to give a helping hand to those who need it cause at some point, you may be the one who will be in the need 👳‍♀️
+ */
+//: [Next page 🤓](@next)
 
 struct Constants {
     static let canvasHeight: Int = 892
@@ -473,7 +490,7 @@ func runHackersCode() -> Void {
 
 func tellStory() -> Void {
     let storyTeller: AVSpeechSynthesizer = AVSpeechSynthesizer()
-    let storyText: AVSpeechUtterance = AVSpeechUtterance(string: "Once upon a time there was a lot of students who were doing their best to get scholarships to Dub-Dub in San Jose")
+    let storyText: AVSpeechUtterance = AVSpeechUtterance(string: "Once they start building their software ideas, they go a long way till they create what they initially desired. In the meantime thery may come bugs, necessity to learn new APIs and SDKs and so on. Truth to be told, they do not have to worry about any of those things as they belong to the iOS community. They can ask for help and will be provided with asistance any time they ask. It doesn't matter they take part in the same hackathon because they can count on each other's help")
     
     storyText.rate = AVSpeechUtteranceDefaultSpeechRate;
     storyText.voice = AVSpeechSynthesisVoice(language: "en-US")
@@ -495,5 +512,3 @@ makeNightModeVisible()
 tellStory()
 
 PlaygroundPage.current.liveView = liveViewCanvas
-
-//: [Next page 🤓](@next)

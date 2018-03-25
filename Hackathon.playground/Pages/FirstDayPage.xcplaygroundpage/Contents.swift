@@ -5,7 +5,7 @@ import AVFoundation
 //: [Previous page 🤓](@previous)
 /*:
  
- # Haackathon - what it is? 👩‍💻👨‍💻
+ # Haackathon - what is it? 👩‍💻👨‍💻
  
  ![Me AGHacks](AGHacks.jpg)
  
