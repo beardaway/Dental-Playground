@@ -77,6 +77,8 @@ let yaoSweatImageView: UIImageView = UIImageView(image: UIImage(named: Constants
 yaoSweatImageView.frame = CGRect(x: 600, y: 375, width: Constants.sweatWidth, height: Constants.sweatHeight)
 liveViewCanvas.addSubview(yaoSweatImageView)
 
+let sweatImages: [UIImageView] = [konradSweatImageView, blakeSweatImageViewOne, blakeSweatImageViewTwo, yaoSweatImageView]
+
 func calculateTime(dateFormat: String, endTime: String, startTime: Date = Date()) -> DateComponents {
     dateFormatter.dateFormat = dateFormat
     let _startTime = startTime
@@ -105,23 +107,21 @@ func tellStory() -> Void {
     }
 }
 
-func setSweatImageViewsAlphasToZero() -> Void {
-    konradSweatImageView.alpha = 0
-    blakeSweatImageViewOne.alpha = 0
-    blakeSweatImageViewTwo.alpha = 0
-    yaoSweatImageView.alpha = 0
+func keepSweatInvisible() -> Void {
+    for sweatImage in sweatImages {
+        sweatImage.alpha = 0
+    }
 }
 
-func setSweatImageViewsAlphasToOne() -> Void {
-    konradSweatImageView.alpha = 1
-    blakeSweatImageViewOne.alpha = 1
-    blakeSweatImageViewTwo.alpha = 1
-    yaoSweatImageView.alpha = 1
+func letSweatOut() -> Void {
+    for sweatImage in sweatImages {
+        sweatImage.alpha = 1
+    }
 }
 
 func showGuysAnxiety() -> Void {
     UIView.animate(withDuration: 11.0) {
-        setSweatImageViewsAlphasToOne()
+        letSweatOut()
         konradSweatImageView.transform = CGAffineTransform(translationX: 0.0, y: 30)
         blakeSweatImageViewOne.transform = CGAffineTransform(translationX: 0.0, y: 35)
         blakeSweatImageViewTwo.transform = CGAffineTransform(translationX: 0.0, y: 35)
@@ -135,7 +135,7 @@ let countDownTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) 
 
 countDownTimer.fire()
 tellStory()
-setSweatImageViewsAlphasToZero()
+keepSweatInvisible()
 showGuysAnxiety()
 
 PlaygroundPage.current.liveView = liveViewCanvas

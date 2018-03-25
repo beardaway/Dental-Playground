@@ -81,6 +81,8 @@ let yaoMini: UIImageView = UIImageView(image: UIImage(named: "YaoMini"))
 yaoMini.frame = CGRect(x: 480, y: 700, width: Constants.miniHackerWidth, height: Constants.miniHackerHeight)
 liveViewCanvas.addSubview(yaoMini)
 
+let hackers: [UIImageView] = [konradMini, blakeMini, yaoMini]
+
 let konradChat: UIImageView = UIImageView(image: UIImage(named: "RedChatCloud"))
 konradChat.frame = CGRect(x: 200, y: 265, width: Constants.chatCloudWidth, height: Constants.chatCloudHeight)
 liveViewCanvas.addSubview(konradChat)
@@ -110,6 +112,9 @@ yaoChatText.textColor = UIColor.white
 yaoChatText.font = UIFont(name: Constants.preferredFont, size: 17)
 yaoChatText.text = "Can't wait!"
 liveViewCanvas.addSubview(yaoChatText)
+
+let hackersChats: [UIImageView] = [konradChat, blakeChat, yaoChat]
+let hackersChatsTexts: [UILabel] = [konradChatText, blakeChatText, yaoChatText]
 
 let teslaImageView: UIImageView = UIImageView(image: UIImage(named: "Car"))
 teslaImageView.frame = CGRect(x: 900, y: 763, width: 400, height: 130)
@@ -188,16 +193,16 @@ func driveCarAway() -> Void {
 }
 
 func keepHackersInTheCar() -> Void {
-    konradMini.alpha = 0
-    blakeMini.alpha = 0
-    yaoMini.alpha = 0
+    for hacker in hackers {
+        hacker.alpha = 0
+    }
 }
 
 func getHackersOutOfTheCar() -> Void {
     UIView.animate(withDuration: 4.0) {
-        konradMini.alpha = 1
-        blakeMini.alpha = 1
-        yaoMini.alpha = 1
+        for hacker in hackers {
+            hacker.alpha = 1
+        }
     }
 }
 
@@ -210,21 +215,24 @@ func takeHackersToHackathonVenue() -> Void {
 }
 
 func keepHackersQuite() -> Void {
-    konradChat.alpha = 0
-    konradChatText.alpha = 0
-    blakeChat.alpha = 0
-    blakeChatText.alpha = 0
-    yaoChat.alpha = 0
-    yaoChatText.alpha = 0
+    for hackerChat in hackersChats {
+        hackerChat.alpha = 0
+    }
+    
+    for hackerChatText in hackersChatsTexts {
+        hackerChatText.alpha = 0
+    }
 }
 
 func getHackersTalking() -> Void {
-    konradChat.alpha = 1
-    konradChatText.alpha = 1
-    blakeChat.alpha = 1
-    blakeChatText.alpha = 1
-    yaoChat.alpha = 1
-    yaoChatText.alpha = 1
+    
+    for hackerChat in hackersChats {
+        hackerChat.alpha = 1
+    }
+    
+    for hackerChatText in hackersChatsTexts {
+        hackerChatText.alpha = 1
+    }
 }
 
 func tellStory() -> Void {
