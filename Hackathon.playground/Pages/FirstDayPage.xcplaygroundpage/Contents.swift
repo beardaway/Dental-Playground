@@ -1,8 +1,31 @@
-//: [Previous page 🤓](@previous)
-
 import UIKit
 import PlaygroundSupport
 import AVFoundation
+
+//: [Previous page 🤓](@previous)
+/*:
+ 
+ # Haackathon - what it is? 👩‍💻👨‍💻
+ 
+ ![Me AGHacks](AGHacks.jpg)
+ 
+ ### The definition
+ 
+**Hackathon** is an event which gathers computer programmers, designer, project managers and those who are into business, who collaborate on software projects for limited amount of time
+ 
+ ## Core values of every hackathon
+ 
+ This is a list of values that any hackathon in the world should share:
+ 
+ * Learn
+ * Create
+ * Share
+ 
+ ## Why is it great to attend hackathons?
+ 
+There are numerous reasons why anyone who is at least somehow into software development in general, should attend hackathons. The most important thing is that you are able to meet and collaborate with lots of amazing and super-talented people who want to build marvellous stuff. Second things is that you are able to learn new skills during hackathon time, that otherwise you won't be able to learn (cause you probably don't have enough time 🙂). The last main thing is that you will be given a chance to build a useful piece of software that will let you become the winner and secure eternal glory 🤴🏽👸🏽.
+ */
+//: [Next page 🤓](@next)
 
 struct Constants {
     static let canvasHeight: Int = 892
@@ -237,7 +260,7 @@ func getHackersTalking() -> Void {
 
 func tellStory() -> Void {
     let storyTeller: AVSpeechSynthesizer = AVSpeechSynthesizer()
-    let storyText: AVSpeechUtterance = AVSpeechUtterance(string: "Once upon a time there was a lot of students who were doing their best to get scholarships to Dub-Dub in San Jose. Once upon a time there was a lot of students who were doing their best to get scholarships to Dub-Dub in San Jose. Once upon a time there was a lot of students who were doing their best to get scholarships to Dub-Dub in San Jose")
+    let storyText: AVSpeechUtterance = AVSpeechUtterance(string: "Each year, around the same period of the year, the WWDC Scholarship contest is announced. This is the time when they gather around their MacBooks, building amazing software to showcase their skill and passion to become the WWDC Scholars")
     
     storyText.rate = AVSpeechUtteranceDefaultSpeechRate;
     storyText.voice = AVSpeechSynthesisVoice(language: "en-US")
@@ -255,5 +278,3 @@ keepHackersQuite()
 driveHackersToHackathon()
 
 PlaygroundPage.current.liveView = liveViewCanvas
-
-//: [Next page 🤓](@next)
