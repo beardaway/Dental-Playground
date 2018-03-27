@@ -10,11 +10,11 @@ import AVFoundation
  
  ## The definition
  
-**Hackathon** is an event which gathers computer programmers, designer, project managers and those who are into business, who collaborate on software projects for limited amount of time
+**Hackathon** is an event which gathers computer programmers, designers, project managers and those who are into business, who collaborate on software projects for limited amount of time
  
  ## Core values of every hackathon
  
- This is a list of values that any hackathon in the world should share:
+ This is a list of values that any hackathon in the world should incorporate into their culture:
  
  * Learn
  * Create
@@ -22,7 +22,7 @@ import AVFoundation
  
  ## Why is it great to attend hackathons?
  
-There are numerous reasons why anyone who is at least somehow into software development in general, should attend hackathons. The most important thing is that you are able to meet and collaborate with lots of amazing and super-talented people who want to build marvellous stuff. Second things is that you are able to learn new skills during hackathon time, that otherwise you won't be able to learn (cause you probably don't have enough time 🙂). The last main thing is that you will be given a chance to build a useful piece of software that will let you become the winner and secure eternal glory 🤴🏽👸🏽.
+There are numerous reasons why anyone who is at least somehow into software development, should attend hackathons. The most important thing is that you are able to meet and collaborate with lots of amazing and super-talented people who want to build marvellous stuff. Second things is that you are able to learn new skills during hackathon time, that otherwise you won't be able to learn (cause you probably don't have enough time on a daily basis 🙂). The last thing is that you will be given a chance to build a problem-solving piece of software that will let you become the winner and secure eternal glory 🤴🏽👸🏽.
  */
 //: [Next page 🤓](@next)
 
