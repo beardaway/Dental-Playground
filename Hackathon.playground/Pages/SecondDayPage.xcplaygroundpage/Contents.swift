@@ -9,15 +9,15 @@ import PlaygroundSupport
  
  ## What is obvious?
  
-For someone who attended numerous hackathon in their life, it is clear that the only two things that are certain both at hackathons and in software development, are bugs and time when you have to fix them 👩‍🔧👨‍🔧
+For someone who attended numerous hackathons in their life, it is clear that the only two things that are certain both at hackathons and in software development, are bugs and time when you have to fix them 👩‍🔧👨‍🔧
  
  ## What is important?
  
- The important thing is that whenever you will face any bugs, you can ask for help. To be honest anyone! All hackathons gather people of different skillsets and experiences. So pick your communication channel and ask for help 🎤 There will be for sure a bunch of guys who will be more than willing to help you with the stuff that cause your nightmares 🛠🙀
+ The important thing is that whenever you will face any bugs, you can ask for help. To be honest anyone! All hackathons gather people of different skillsets and experiences. So pick your communication channel and ask for help 🎤 There will be for sure a bunch of guys who will be more than willing to help you with the stuff that causes your nightmares 🛠🙀
  
  ## What is so fantastic about hackathons?
  
-The best thing about hackathons and IT in general is that software development connect people across languages, timezones, places all over the world and cultures. We really do not pay attention to any of those things, cause we treat everyone with great respect. To build a trustworthy developer communities you have to give a helping hand to those who need it cause at some point, you may be the one who will be in the need 👳‍♀️
+The best thing about hackathons and IT in general is that software development connects people across languages, timezones, places all over the world and cultures. We really do not pay attention to any of those things, cause we treat everyone with great respect. To build a trustworthy developer communities you have to give a helping hand to those who need it cause at some point, you may be the one who will be in the need 👳‍♀️
  */
 //: [Next page 🤓](@next)
 
