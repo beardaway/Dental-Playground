@@ -23,7 +23,7 @@ import AVFoundation
  
  ## Winners announcement
 
- You know this feeling after whatever exam or job interview. In case of waiting for hackathon results it looks the same. You know that you put your heart in coding and designing the software you planned at the beginning. All hackers did 💪 You did your best, now is the time to calm down and wait for final announcements 😬
+ You know this feeling after whatever exam or job interview. In case of waiting for hackathon results it looks the same. You know that you put your heart in coding and designing the software you planned to build at the beginning. All hackers did 💪 You did your best, now is the time to calm down and wait for final announcements 😬
  */
 //: [Next page 🤓](@next)
 
