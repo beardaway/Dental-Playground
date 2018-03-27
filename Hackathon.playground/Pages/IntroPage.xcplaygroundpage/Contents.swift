@@ -10,19 +10,19 @@ import AVFoundation
  
  ### Who am I?
  
- Hi there! I'm Konrad. I've been working as an iOS Developer for the last 8 months. Previously had been a project manager and data analyst. But to be honest, the best project in my life that I am really proud of is - **AGHacks**. Till now, the biggest student hackathon in Poland, that I co-organized with a group of friends. In less than 6 months we managed to pursue our passion and create a fantastic and engaging event for more than 500 hackers from all around Europe. It wasn't that easy, but it was the true core that allowed me to follow my career in software engineering and devrel 🤓
+ Hi there! I'm Konrad 👋 I'm currently studying Computer Science and Econometrics at AGH University of Science and Technology in Cracow (Poland). I've been working as an iOS Developer for the last 8 months. Previously had been a project manager and a data analyst. But to be honest, the best project in my life that I am really proud of is - **AGHacks**. Till now, the biggest student hackathon in Poland, that I co-organized with a group of friends. In less than 6 months we managed to pursue our passion and create a fantastic and engaging event for more than 500 hackers from all around Europe. It wasn't that easy, but it was the true core that allowed me to follow my career in software engineering and devrel 🤓
  
  ## Why such topic?
  
- A great question, indeed! 🙂 As I'm super excited about both iOS sofware engineering and hackathons, I've decided that I will use my WWDC Scholarship Playground this year, to tell a compelling story of students all around the world, who try to get WWDC scholarship every year by helping each other and building wonderful apps and playgrounds. Combining business with pleasure have never been so easy 😂 For those of you who haven't taken part in any hackathon yet, I hope this simple animated book will encourage you to attend one too 🙂
+ A great question, indeed! 🙂 As I'm super excited about both iOS sofware engineering and hackathons, I've decided that I will  marry those topics and use my WWDC Scholarship Playground this year, to tell a compelling story of students all around the world, who try to get WWDC scholarship every year by helping each other and building wonderful apps and playgrounds. Combining business with pleasure have never been so easy 😂 For those of you who haven't taken part in any hackathon yet, I hope this simple animated book will encourage you to attend one too 🙂
  
  ## What is this playground about?
  
- This playground is about large group of students all around the world who love iOS programming and do their best every year by creating robust software to show their passion and win the WWDC Scholarships. I intended to tell all of you their story. The story that we can all simply call an online hackathon. Enjoy your reading, watching and listening 🙂
+ This playground is about large group of students all around the world who love iOS programming and do their best every year by creating robust software to show their passion and get WWDC Scholarships. I intended to tell all of you their story. The story that we can all simply call an online solo hackathon. Enjoy your reading, watching and listening 🙂
  
  ## **Before reading**
  
- As the canvas on the left for each page of this book is 1024x892, it is advisable to enlarge the right part of the playground to experience all its elements 🤩 When going to next pages, the Live View on the right may not load - in this case, please do change it in the upper part of the Live View. Thank you ❤️
+ As the canvas on the right for each page of this book is 1024x892, it is advisable to enlarge the right part of the playground to experience all its elements 🤩 When going to next pages, the Live View on the right may not load - in this case, please do change it in the upper part of the Live View. On the left side of the playground you can read some interesting content, while listening to the story that will be told and shown on the right. Thank you and enjoy your time ❤️
  */
 //: [Next page 🤓](@next)
 
