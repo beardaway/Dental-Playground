@@ -22,6 +22,3 @@ Hackathon Playground is my WWDC 2018 Scholarship app.  The main theme of the app
 ### Video
 
 ![](HackathonPlaygroundGif.gif)
-
-
-https://vimeo.com/262413369
