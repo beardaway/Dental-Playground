@@ -13,7 +13,7 @@ import AVFoundation
  Wish you guys lots of luck in your future adventures and happy coding in our iOS software engineering playground! 🎮💻⌨️🤓
  */
 
-// Constants
+// MARK: Constants
 
 struct Constants {
     static let canvasWidth: Int = 1024
@@ -23,6 +23,8 @@ struct Constants {
     static let headsHeight: Int = 120
     static let headsWidth: Int = 120
 }
+
+// MARK: Adventure Canvas
 
 let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: Constants.canvasWidth, height: Constants.canvasHeight))
 liveViewCanvas.backgroundColor = UIColor.orange
@@ -44,6 +46,8 @@ liveViewCanvas.addSubview(yaoHead)
 let blakeHead: UIImageView = UIImageView(image: UIImage(named: "BlakeHead"))
 blakeHead.frame = CGRect(x: 310, y: 500, width: Constants.headsWidth, height: Constants.headsHeight)
 liveViewCanvas.addSubview(blakeHead)
+
+// MARK: Adventure Functions
 
 func animateFinishLabel() -> Void {
     UIView.animate(withDuration: 2.0) {

@@ -26,13 +26,15 @@ import AVFoundation
  */
 //: [Next page 🤓](@next)
 
-// Constants
+// MARK: Constants
 
 struct Constants {
     static let preferredTextSize: CGFloat = 63.0
     static let headsHeight: Int = 120
     static let headsWidth: Int = 120
 }
+
+// MARK: Adventure Canvas
 
 let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 1024, height: 892))
 liveViewCanvas.backgroundColor = UIColor.orange
@@ -57,6 +59,8 @@ liveViewCanvas.addSubview(yaoHead)
 let blakeHead: UIImageView = UIImageView(image: UIImage(named: "BlakeHead"))
 blakeHead.frame = CGRect(x: 320, y: 500, width: Constants.headsWidth, height: Constants.headsHeight)
 liveViewCanvas.addSubview(blakeHead)
+
+// MARK: Story Functions
 
 func tellStory() -> Void {
     let storyTeller: AVSpeechSynthesizer = AVSpeechSynthesizer()

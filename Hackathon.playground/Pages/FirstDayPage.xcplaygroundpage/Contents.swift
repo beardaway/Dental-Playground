@@ -26,6 +26,8 @@ There are numerous reasons why anyone who is at least somehow into software deve
  */
 //: [Next page 🤓](@next)
 
+// MARK: Constants
+
 struct Constants {
     static let canvasHeight: Int = 892
     static let canvasWidth: Int = 1024
@@ -43,6 +45,8 @@ struct Constants {
     static let greenFieldWidth: Int = 185
     static let greenFieldHeight: Int = 774
 }
+
+// MARK: Adventure Canvas
 
 let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: Constants.canvasWidth, height: Constants.canvasHeight))
 liveViewCanvas.backgroundColor = UIColor.white
@@ -167,6 +171,8 @@ sunRayFive.frame = CGRect(x: 710, y: 90, width: 20, height: 40)
 liveViewCanvas.addSubview(sunRayFive)
 
 let sunRays: [UIImageView] = [sunRayOne, sunRayTwo, sunRayThree, sunRayFour, sunRayFive]
+
+// MARK: Adventure Functions
 
 func sunShine() -> Void {
     UIView.animate(withDuration: 1.5, animations: {

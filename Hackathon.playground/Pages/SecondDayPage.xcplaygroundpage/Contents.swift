@@ -21,6 +21,8 @@ The best thing about hackathons and IT in general is that software development c
  */
 //: [Next page 🤓](@next)
 
+// MARK: Constants
+
 struct Constants {
     static let canvasHeight: Int = 892
     static let canvasWidth: Int = 1024
@@ -52,6 +54,8 @@ struct Constants {
     static let sparklingWaterWidth: Int = 30
     static let sparklingWaterHeight: Int = 90
 }
+
+// MARK: Adventure Canvas
 
 let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: Constants.canvasWidth, height: Constants.canvasHeight))
 liveViewCanvas.backgroundColor = UIColor(red: 0.00, green: 0.67, blue: 0.54, alpha: 1.0)
@@ -258,6 +262,8 @@ liveViewCanvas.addSubview(yaoPillow)
 let yao: UIImageView = UIImageView(image: UIImage(named: "YaoBack"))
 yao.frame = CGRect(x: 550, y: Constants.hackerY, width: Constants.hackerWidth, height: Constants.hackerHeight)
 liveViewCanvas.addSubview(yao)
+
+// MARK: Adventure Functions
 
 func makeSunRaysVisible() -> Void {
     for sunRay in sunRays {

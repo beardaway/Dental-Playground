@@ -27,7 +27,7 @@ import AVFoundation
  */
 //: [Next page 🤓](@next)
 
-// Constants
+// MARK: Constants
 
 struct Constants {
     static let canvasWidth: Int = 1024
@@ -52,6 +52,8 @@ let requestedComponents: Set<Calendar.Component> = [
 
 let dateFormatter: DateFormatter = DateFormatter()
 let userCalendar = Calendar.current
+
+// MARK: Adventure Canvas
 
 let liveViewCanvas: UIView = UIView(frame: CGRect(x: 0, y: 0, width: Constants.canvasWidth, height: Constants.canvasHeight))
 liveViewCanvas.backgroundColor = UIColor(red: 0.73, green: 0.44, blue: 0.44, alpha:1.0)
@@ -101,6 +103,8 @@ yaoSweatImageView.frame = CGRect(x: 600, y: 375, width: Constants.sweatWidth, he
 liveViewCanvas.addSubview(yaoSweatImageView)
 
 let sweatImages: [UIImageView] = [konradSweatImageView, blakeSweatImageViewOne, blakeSweatImageViewTwo, yaoSweatImageView]
+
+// MARK: Adventure Functions
 
 func calculateTime(dateFormat: String, endTime: String, startTime: Date = Date()) -> DateComponents {
     dateFormatter.dateFormat = dateFormat
