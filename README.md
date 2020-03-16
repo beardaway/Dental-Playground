@@ -18,6 +18,6 @@ Hackathon Playground is my WWDC 2018 Scholarship app.  The main theme of the app
 - Foundation
 
 
-### Screenshots
+### Screenplay
 
-![](/IntroAssets/introImageTwo.png)
+![](https://github.com/beardaway/wwdc-hackathon-playground/blob/master/HackathonPlaygroundGif.gif)
