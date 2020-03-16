@@ -7,15 +7,15 @@ Hackathon Playground is my WWDC 2018 Scholarship app.  The main theme of the app
 
 ### Swift Version
 
-- <img src="https://img.shields.io/badge/Swift-4.2-green.svg" alt="swift version"/>
+* <img src="https://img.shields.io/badge/Swift-4.2-green.svg" alt="swift version"/>
 
 ### Frameworks used
 
-- UIKit
+* [UIKit](https://developer.apple.com/documentation/uikit)
 
-- AVFoundation
+* [AVFoundation](https://developer.apple.com/av-foundation/)
 
-- Foundation
+* [Foundation](https://developer.apple.com/documentation/foundation)
 
 
 ### Screenplay
