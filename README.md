@@ -1,6 +1,6 @@
 # Hackathon Playground
 
-<a href="https://en.wikipedia.org/wiki/Apple_Worldwide_Developers_Conference"><img src="https://img.shields.io/badge/WWDC-2018-BLUEVIOLET" alt="swift version"/></a>  <a href="https://developer.apple.com/videos/wwdc2018/"><img src="https://img.shields.io/badge/Scholarship-Submission-BLUEVIOLET" alt="swift version"/></a>  <a href="https://www.apple.com/swift/playgrounds/"><img src="https://img.shields.io/badge/Swift-Playgrounds-blueviolet" alt="swift version"/></a>
+<a href="https://en.wikipedia.org/wiki/Apple_Worldwide_Developers_Conference"><img src="https://img.shields.io/badge/WWDC-2018-BLUEVIOLET" alt=""/></a>  <a href="https://developer.apple.com/videos/wwdc2018/"><img src="https://img.shields.io/badge/Scholarship-Submission-BLUEVIOLET" alt=""/></a>  <a href="https://www.apple.com/swift/playgrounds/"><img src="https://img.shields.io/badge/Swift-Playgrounds-blueviolet" alt=""/></a>
 
 ![](/IntroAssets/introImageOne.png)
 
