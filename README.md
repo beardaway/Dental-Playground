@@ -22,4 +22,4 @@ Hackathon Playground is my WWDC 2018 Scholarship app.  The main theme of the app
 
 ### Screenplay
 
-![]![](/Assets/HackathonPlaygroundGif.gif)
+![](/Assets/HackathonPlaygroundGif.gif)
